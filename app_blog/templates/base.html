@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang=”uk”>
+    {% load static %}
+    <head>
+        <title>Blog</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <!-- Include Styles -->
+        <!DOCTYPE html>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+        <link type="text/css" href="{% static 'css/main.css' %}" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1>Персональний блог</h1>
+            </center>
+            {% spaceless %}
+                <div class="mymenu">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="/">Головна</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'articles-list' %}">Публікації</a>
+                        </li>
+                        <li>{{ item.title|upper }}</li>
+                    </ol>
+                </div>
+            {% endspaceless %}
+            {% block content %}{% endblock content %}
+        </div>
+        <!-- Javascripts Section -->
+        <script src="{% static 'js/jquery-3.6.0.js' %}" crossorigin="anonymous"></script>
+        <script src="{% static 'js/bootstrap.js' %}" crossorigin="anonymous"></script>
+    </body>
+</html>

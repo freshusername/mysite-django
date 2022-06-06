@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Press+Start+2P&display=swap');
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.breadcrumb  {
+    background-color: rgba(9, 56, 98, 0.171);
+}
+
+.article-desc {
+    background-color: rgba(67, 98, 9, 0.171);
+}
+
+.article-block {
+    background-color: rgba(67, 98, 9, 0.171);
+    margin: 1%;
+    padding: 3%;
+}
+
+.article-block>p {
+    background-color: rgba(67, 98, 9, 0.171);
+}
+
+.pubs {
+    text-align: right;
+}
+
+.articles-row, .navbar  {
+    background-color: rgba(55, 98, 9, 0.171);
+    margin: 1%;
+    padding: 2%;
+}
+
+body>div>div>ol>li {
+    margin: 0 5px;
+}
+
+div.container-image>img {
+    width: 100%;
+}
+
+a {
+color: rgb(14, 136, 75);
+}
